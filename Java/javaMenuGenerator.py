@@ -22,15 +22,15 @@ text = input()
 menu = [
     "public " + static + "void " + name + "() {",
     "\tint op;",
-    "\tSystem.out.println('{0}');".format(text),
     "\tdo {",
-    "\t\top = USERINPUT",
+     "\t\tSystem.out.println('{0}');".format(text),
+    "\t\top = USERINPUT;",
     "\t\tswitch(op) {",
 ]
 for x in options:
     menu.append(x)
 menu.append("\t\t}")
-menu.append("\t}"+"while(op<{0});".format(len(options)+1))
+menu.append("\t}"+"while(op<{0});".format(len(options)))
 menu.append("}")
 
 print ("---Generated Menu---")
