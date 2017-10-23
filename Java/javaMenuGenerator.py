@@ -21,7 +21,7 @@ text = input()
 
 menu = [
     "public " + static + "void " + name + "() {",
-    "\tint op",
+    "\tint op;",
     "\tSystem.out.println('{0}');".format(text),
     "\tdo {",
     "\t\top = USERINPUT",
